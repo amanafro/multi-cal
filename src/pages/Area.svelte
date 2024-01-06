@@ -12,6 +12,11 @@
     let side2 = 0;
 
     let squareArea = 0;
+    let triangleArea = 0;
+    let rectangleArea = 0;
+    let circleArea = 0;
+
+    let radius = 0;
 
     function square() {
         squareArea = side1 * side2;
@@ -19,60 +24,42 @@
 
     }
     function triangle() {
-
+        triangleArea = (side1 * side2) * .5;
+        return triangleArea;
     }
     function rectangle() {
-
+        rectangleArea = side1 * side2;
     }
     function circle() {
-
+        circleArea = PI * radius^2
+        return circleArea;
     }
 
 
 </script>
+<main>
+    <label>
+        <h3>{title}</h3>
+        input the first side
+        <input type="number" bind:value={side1}>
+        input the second side
+        <input type="number" bind:value={side2}>
+        <button on:click={square}>Calculate</button>
+        <p>{parseFloat(squareArea.toFixed(2)) + " cm²"}</p>
+    </label>
+</main>
 
 <main>
     <label>
         <h3>{title}</h3>
         input the first side
-        <input type="number" bind:value={celsius1}>
-        <input type="number" bind:value={celsius1}>
-        <button on:click={}>Calculate</button>
-        <p>{parseFloat(fahrenheit1.toFixed(2)) + " °F"}</p>
+        <input type="number" bind:value={side1}>
+        input the second side
+        <input type="number" bind:value={side2}>
+        <button on:click={triangle}>Calculate</button>
+        <p>{parseFloat(triangleArea.toFixed(2)) + " cm²"}</p>
     </label>
 </main>
-
-<main>
-    <label>
-        <h3>{title}</h3>
-        input in fahrenheit
-        <input type="number" bind:value={}>
-        <button on:click={}>Calculate</button>
-        <p>{parseFloat(.toFixed(2)) + " °C"}</p>
-    </label>
-</main>
-
-<main>
-    <label>
-        <h3>{title}</h3>
-        input in fahrenheit
-        <input type="number" bind:value={}>
-        <button on:click={}>Calculate</button>
-        <p>{parseFloat(.toFixed(2)) + " °C"}</p>
-    </label>
-</main>
-
-<main>
-    <label>
-        <h3>{title}</h3>
-        input in fahrenheit
-        <input type="number" bind:value={}>
-        <button on:click={}>Calculate</button>
-        <p>{parseFloat(.toFixed(2)) + " °C"}</p>
-    </label>
-</main>
-
-
 
 <style>
 
