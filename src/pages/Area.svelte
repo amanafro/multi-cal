@@ -35,46 +35,33 @@
         return circleArea;
     }
 
-
 </script>
+
 <main>
     <label>
         <h3>{title}</h3>
-        input the first side
-        <input type="number" bind:value={side1}>
-        input the second side
-        <input type="number" bind:value={side2}>
-        <button on:click={square}>Calculate</button>
-        <p>{parseFloat(squareArea.toFixed(2)) + " cm²"}</p>
+        input the first side<br>
+        <input type="number" bind:value={side1}><br>
+        input the second side<br>
+        <input type="number" bind:value={side2}><br>
+        <button on:click={square}>Calculate</button><br>
+        <span>{parseFloat(squareArea.toFixed(2)) + " cm²"}</span>
     </label>
 </main>
 
 <main>
     <label>
         <h3>{title}</h3>
-        input the first side
-        <input type="number" bind:value={side1}>
-        input the second side
-        <input type="number" bind:value={side2}>
-        <button on:click={triangle}>Calculate</button>
-        <p>{parseFloat(triangleArea.toFixed(2)) + " cm²"}</p>
+        input the first side<br>
+        <input type="number" bind:value={side1}><br>
+        input the second side<br>
+        <input type="number" bind:value={side2}><br>
+        <button on:click={triangle}>Calculate</button><br>
+        <span>{parseFloat(triangleArea.toFixed(2)) + " cm²"}</span>
     </label>
 </main>
 
 <style>
 
-    main {
-        display: grid;
-        place-items: center;
-        max-height: 100dvh;
-        background-color: beige;
-        padding: 3rem;
-        border-radius: .75rem;
-    }
-
-    h3, p {
-        color: black;
-        font-size: 2rem;
-    }
 
 </style>

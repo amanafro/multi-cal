@@ -26,10 +26,10 @@
 <main>
     <label>
     <h3>{title}</h3>
-    input in celsius
-    <input type="number" bind:value={celsius1}>
-    <button on:click={celsiusToFahrenheit}>Calculate</button>
-    <p>{parseFloat(fahrenheit1.toFixed(2)) + " °F"}</p>
+    input in celsius<br>
+    <input type="number" bind:value={celsius1}><br>
+    <button on:click={celsiusToFahrenheit}>Calculate</button><br>
+    <span>{parseFloat(fahrenheit1.toFixed(2)) + " °F"}</span>
     </label>
 </main>
 
@@ -37,29 +37,14 @@
 <main>
     <label>
     <h3>{title}</h3>
-    input in fahrenheit
-    <input type="number" bind:value={fahrenheit2}>
-    <button on:click={fahrenheitToCelsius}>Calculate</button>
-    <p>{parseFloat(celsius2.toFixed(2)) + " °C"}</p>
+    input in fahrenheit<br>
+    <input type="number" bind:value={fahrenheit2}><br>
+    <button on:click={fahrenheitToCelsius}>Calculate</button><br>
+    <span>{parseFloat(celsius2.toFixed(2)) + " °C"}</span>
     </label>
 </main>
 
 
 
 <style>
-
-    main {
-        display: grid;
-        place-items: center;
-        max-height: 100dvh;
-        background-color: beige;
-        padding: 3rem;
-        border-radius: .75rem;
-    }
-
-    h3, p {
-        color: black;
-        font-size: 2rem;
-    }
-
 </style>

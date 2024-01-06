@@ -25,10 +25,10 @@
 <main>
     <label>
     <h3>{title}</h3>
-    input in miles
-    <input type="number" bind:value={miles1}>
-    <button on:click={milesToKM}>Calculate</button>
-    <p>{parseFloat(km1.toFixed(2)) + " km"}</p>
+    input in miles<br>
+    <input type="number" bind:value={miles1}><br>
+    <button on:click={milesToKM}>Calculate</button><br>
+    <span>{parseFloat(km1.toFixed(2)) + " km"}</span>
     </label>
 
 </main>
@@ -36,27 +36,15 @@
 <main>
     <label>
     <h3>{title}</h3>
-    input in km
-    <input type="number" bind:value={km2}>
-    <button on:click={kmToMiles}>Calculate</button>
-    <p>{parseFloat(miles2.toFixed(2)) + " miles"}</p>
+    input in km<br>
+    <input type="number" bind:value={km2}><br>
+    <button on:click={kmToMiles}>Calculate</button><br>
+    <span>{parseFloat(miles2.toFixed(2)) + " miles"}</span>
     </label>
 </main>
 
 <style>
 
-    main {
-        display: grid;
-        place-items: center;
-        max-height: 100dvh;
-        background-color: beige;
-        padding: 3rem;
-        border-radius: .75rem;
-    }
 
-    h3, p {
-        color: black;
-        font-size: 2rem;
-    }
 
 </style>

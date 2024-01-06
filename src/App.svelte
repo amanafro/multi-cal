@@ -14,11 +14,3 @@
     <Route path="/Speed" component={Speed}/>
     <Route path="/Area" component={Area}/>
 </Router>
-
-<main>
-
-</main>
-
-<style>
-
-</style>
