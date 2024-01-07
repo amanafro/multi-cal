@@ -1,5 +1,7 @@
 <script>
 
+    import Arrow from '../assets/arrow.svg';
+
     const title = "calculate length";
 
     let miles1 = 0;
@@ -21,8 +23,9 @@
 
 </script>
 
-
+<img src={Arrow} alt="arrow" class="arrow">
 <main>
+
     <label>
     <h3>{title}</h3>
     input in miles<br>
@@ -45,6 +48,11 @@
 
 <style>
 
-
+    .arrow {
+        display: flex;
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+    }
 
 </style>
