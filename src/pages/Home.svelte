@@ -3,7 +3,7 @@
     import TemperatureSvg from "../assets/TemperatureSvg.svg";
     import AreaSvg from "../assets/area.svg";
     import PercentageSvg from "../assets/percentage.svg";
-    import InterestRate from "../assets/interestrate.svg";
+    import Interest from "../assets/Interest.svg";
     import {  Link } from 'svelte-routing';
 </script>
 
@@ -14,7 +14,7 @@
     <Link to="/Temperature"><img src={TemperatureSvg} alt="Temperature" /></Link>
     <Link to="/Area"><img src={AreaSvg} alt="Speed" /></Link>
     <Link to="/Percentage"><img src={PercentageSvg} alt="Speed" /></Link>
-    <Link to="/Interest rate"><img src={InterestRate} alt="Speed" /></Link>
+    <Link to="/Interest"><img src={Interest} alt="Speed" /></Link>
     </div>
 </main>
 

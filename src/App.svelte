@@ -3,7 +3,8 @@
   import Length from './pages/Length.svelte'
   import Temperature from './pages/Temperature.svelte'
   import Percentage from './pages/Percentage.svelte'
-  import Interestrate from './pages/InterestRate.svelte'
+
+  import Interest from './pages/Interest.svelte'
   import Area from './pages/Area.svelte'
   import { Router, Route } from 'svelte-routing';
 </script>
@@ -14,5 +15,5 @@
     <Route path="/Temperature" component={Temperature}/>
     <Route path="/Area" component={Area}/>
     <Route path="/Percentage" component={Percentage}/>
-    <Route path="/Interest rate" component={Interestrate}/>
+    <Route path="/Interest" component={Interest}/>
 </Router>
