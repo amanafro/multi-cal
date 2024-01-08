@@ -7,7 +7,7 @@
     let conversion1 = 9/5;
 
     function celsiusToFahrenheit() {
-        fahrenheit1 = conversion1 * (celsius1 + 32);
+        fahrenheit1 = (conversion1 * celsius1) + 32;
         return fahrenheit1;
     }
 
