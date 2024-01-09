@@ -2,11 +2,11 @@
 
     const title = "calculate area";
 
-    let celsius1 = 0;
-    let fahrenheit1 = 0;
-    let conversion1 = 9/5;
+    let selectedChoice;
+    let choices = ["Square", "Triangle", "Rectangle", "Circle"];
 
     const PI = 3.141592;
+    let radius = 0;
 
     let side1 = 0;
     let side2 = 0;
@@ -15,8 +15,6 @@
     let triangleArea = 0;
     let rectangleArea = 0;
     let circleArea = 0;
-
-    let radius = 0;
 
     function square() {
         squareArea = side1 * side2;
@@ -36,6 +34,22 @@
     }
 
 </script>
+
+<main>
+    <p>what you want</p>
+    <select bind:value={selectedChoice}>
+        {#each choices as choice }
+            <option>{choice}</option>
+        {/each}
+    </select>
+    {#if selectedChoice }
+        <p>{selectedChoice}</p>
+    {/if}
+
+    <button>select</button>
+</main>
+
+
 
 <main>
     <label>
