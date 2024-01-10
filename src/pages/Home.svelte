@@ -21,6 +21,9 @@
 <style>
     .intro {
         display: flex;
+        flex-shrink: 1;
+        margin: 1rem;
+        margin-inline: auto;
         flex-direction: row;
         gap: 1rem;
     }
@@ -28,6 +31,10 @@
     @media only screen and (max-width: 600px) {
         main  {
             padding: 1rem;
+        }
+
+        .intro {
+            display: grid;
         }
     }
 
